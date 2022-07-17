@@ -43,7 +43,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 10vw;
+    /* min-width: 10vw; */
+    min-width: 100px;
 }
 
 .sidebar__headerRight>.MuiSvgIcon-root {
