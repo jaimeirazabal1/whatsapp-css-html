@@ -1,15 +1,26 @@
 import './App.css';
-import { Chat } from './Chat';
-import { Sidebar } from './Sidebar';
+import { Chat } from './components/chat/Chat';
+import { Sidebar } from './components/sidebar/Sidebar';
+
+import { useSelector, useDispatch } from 'react-redux'
+import { Login } from './components/login/Login';
 
 function App() {
+  const isLogged = useSelector(state => state.logged.isLogged)
+  console.log('isLogged',isLogged)
   return (
-    <div className="app">
-      <div className="app__body">
-        <Sidebar/>
-        <Chat src="asf90"/>
-      </div>
-    </div>
+    <>
+        {
+          isLogged ? 
+          <div className="app">
+            <div className="app__body">
+                  <Sidebar/>
+                  <Chat src="asf90"/>
+                  </div>
+          </div>
+           : <Login/>
+        }
+    </>
   );
 }
 

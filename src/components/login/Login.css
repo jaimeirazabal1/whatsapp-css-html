@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+    background-color: white !important;
+}
+
+#app__login_wrap {
+    display: flex;
+    /* establish flex container */
+    flex-direction: column;
+    /* make main-axis vertical */
+    justify-content: center;
+    /* align items vertically, in this case */
+    align-items: center;
+    /* align items horizontally, in this case */
+    height: 100%;
+}
+
+#app__login {
+    margin-top: 10%;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 40px #eee;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+#app__login h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#app__login label {
+    font-weight: bold;
+    width: 100%;
+}
+
+#app__login input {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#app__login button {
+    margin-top: 10px;
+    width: 100%;
+}
